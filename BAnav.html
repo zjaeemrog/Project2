@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="BAnav.css">
+    <link rel="stylesheet" href="../BAnav/BAlogin.css">
+</head>
+<body>
+    <div class="container-dash">
+        <h2>Welkom op je persoonlijke dashboard!</h2>
+        <p>Je bent succesvol ingelogd.</p>
+    </div>
+    <div id="sidebar" class="sidebar"> 
+        <button class="closebtn" onclick="closeNav()">Close</button>
+        <a class="active" href="BAnav.html">HOME</a>
+
+        <div class="dropdown">
+            <a href="#BEHEREN" class="dropbtn">BEHEREN</a>
+            <div class="dropdown-content">
+                <a href="#REKENINGEN">REKENINGEN</a>
+                <a href="#TRANSACTIES">TRANSACTIES</a>
+                <a href="#OVERSCHRIJVINGEN">OVERSCHRIJVINGEN</a>
+                
+            </div>
+        </div>    
+        <div class="dropdown">
+                <a href="#BELEGGEN" class="dropbtn">BELEGGEN</a>
+            <div class="dropdown-content">    
+                <a href="#CRYPTO">CRYPTO</a>
+                <a href="#AANDELEN">AANDELEN</a>
+            </div>
+        </div>    
+        <a href="#ABOUT">ABOUT</a>
+        <a href="#CONTACT">CONTACT</a>
+        <a href="http://127.0.0.1:5500/BAnav/BAlogin/BAlogin.html">UITLOGGEN</a>
+    </div>
+    
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button> 
+    </div>
+        <script src="BAnav.js" defer></script>
+    </body>
+</html>
+          
