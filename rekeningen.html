@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="BAnav.css">
+    <link rel="stylesheet" href="rekeningen.css">
+</head>
+<body>
+    <div class="container-dash">
+        <h2>Welkom op je persoonlijke dashboard!</h2>
+        <p>Je bent succesvol ingelogd.</p>
+    </div>
+    <div id="sidebar" class="sidebar"> 
+        <button class="closebtn" onclick="closeNav()">Close</button>
+        <a class="active" href="">HOME</a>
+
+        <div class="dropdown">
+            <a href="#BEHEREN" class="dropbtn">BEHEREN</a>
+            <div class="dropdown-content">
+                <a href="/BAnav/BAlogin/rekeningen.html">REKENINGEN</a>
+                <a href="#">OVERSCHRIJVINGEN</a>
+                
+            </div>
+        </div>    
+        <div class="dropdown">
+                <a href="#BELEGGEN" class="dropbtn">BELEGGEN</a>
+            <div class="dropdown-content">    
+                <a href="#CRYPTO">CRYPTO</a>
+                <a href="#AANDELEN">AANDELEN</a>
+            </div>
+        </div>    
+        <a href="#ABOUT">ABOUT</a>
+        <a href="#CONTACT">CONTACT</a>
+        <a href="/BAnav/BAlogin/BAlogin.html">UITLOGGEN</a>
+    </div>
+    
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button> 
+    </div>
+    <div class="account-container-wrapper">
+    <div class="account-section">
+        <div class="account" id="checking-account">
+            <h3>Betaalrekening</h3>
+            <p>Saldo: € 1.250,00</p>
+        </div>    
+        <div id="new-accounts-checking"></div>
+        <button id="create-checking-account-btn">Rekening Aanmaken</button>
+        <div class="account-container" id="account-form-container">
+            <h2>Nieuwe Rekening</h2>
+            <form id="account-form">
+                <label for="account-holder">Rekeninghouder:</label>
+                <input type="text" id="account-holder" placeholder="Voer naam in" required><br>
+
+                <label for="account-type">Rekeningtype:</label>
+                <select id="account-type" required>
+                    <option value="checking">Betaalrekening</option>
+                </select><br>
+
+                <label for="initial-balance">Beginbalans (€):</label>
+                <input type="number" id="initial-balance" placeholder="Voer beginbalans in" required><br>
+
+                <button type="submit" class="submit-btn">Maak Rekening</button>
+            </form>
+        </div>
+    </div>
+       <div class="account-section-2">
+        <div class="account" id="savings-account">
+            <h3>Spaarrekening</h3>
+            <p>Saldo: € 5.000,00</p>
+        </div>
+ <div id="new-accounts-savings"></div>
+ <button id="create-savings-account-btn">Rekening Aanmaken</button>
+ <div class="account-container" id="account-form-container-2">
+     <h2>Nieuwe Rekening</h2>
+
+     <form id="account-form-2">
+         <label for="account-holder-2">Rekeninghouder:</label>
+         <input type="text" id="account-holder-2" placeholder="Voer naam in" required><br>
+
+         <label for="account-type-2">Rekeningtype:</label>
+         <select id="account-type-2" required>
+             <option value="savings">Spaarrekening</option>
+         </select><br>
+
+         <label for="initial-balance-2">Beginbalans (€):</label>
+         <input type="number" id="initial-balance-2" placeholder="Voer beginbalans in" required><br>
+
+         <button type="submit" class="submit-btn-2">Maak Rekening</button>
+     </form>
+ </div>
+</div> 
+</div>
+<footer>
+    <p>&copy; 2024 JouwBedrijf. Alle rechten voorbehouden.</p>
+    <div class="footer-container">
+        <a href="#">Privacybeleid</a> | 
+        <a href="#">Algemene voorwaarden</a>
+    </div>
+</footer>
+    <script src="BAnav.js" defer></script>
+    <script src="rekeningen.js" defer></script>
+    </body>
+</html>
+          

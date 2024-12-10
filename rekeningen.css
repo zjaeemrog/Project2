@@ -1,0 +1,324 @@
+body {
+    font-family: Verdana, sans-serif;
+    transition: margin-left .5s;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+.container-dash {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border: 3px solid black;
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 10px;
+    
+}
+.closebtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(8, 7, 7);
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 0;
+    margin-left: 70%;
+    margin-top: 5px;
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:rgb(198, 197, 197);
+    color: rgb(0, 0, 0);
+    padding: 8.5px 15px;
+    border: none;border-radius: 9px;
+    visibility: visible;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+   
+.sidebar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+.sidebar a:hover {
+   font-size: 17.5px;
+   font-weight: bold;
+   color: white;
+   background-color: #4196d7;
+   border: 3px solid black;
+   margin: 0 15px ;
+   border-radius: 8px;
+   text-decoration: none;
+}
+.openbtn:hover {
+    background-color: white;
+}
+.closebtn:hover {
+    background-color: rgb(198, 197, 197);
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+.dropdown {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color:white ;
+    min-width: 160px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.dropdown-content a {
+    color:#000000 ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4196d7; 
+}
+
+.container-dash {
+    width: 100%; 
+    background-color: #4196d7;
+    padding: 20px;
+    border: 3px solid black;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.container-dash.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.account-container-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    margin-left: 250px; 
+    padding: 20px;
+    width: auto; 
+    box-sizing: border-box; 
+}
+
+
+.account-section {
+    width: 48%; 
+    border-radius: 35px;
+    background-color: rgb(198, 197, 197);
+    padding: 20px;
+    border: 3px solid #000000;
+    box-sizing: border-box; 
+}
+
+
+.account-section-2 {
+    width: 48%; 
+    border-radius: 35px;
+    background-color: rgb(198, 197, 197);
+    padding: 20px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+}
+
+
+.account-section, .account-section-2 {
+    margin-bottom: 20px; 
+}
+
+
+.account-container-wrapper {
+    gap: 20px; 
+}
+
+
+ .account {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 3px solid #040303;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+.account:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.account-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.account-section-2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.account h3 {
+    margin-top: 0;
+    font-family:'Cambria, Cochin, Georgia, Times';
+}
+.account p {
+    font-size: 18px;
+    color: #000000;
+}
+
+#create-account-btn {
+    background-color: #4196d7;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+#create-account-btn:hover {
+    background-color: #4196d7;
+}
+.account-container {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ .account-container.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+#create-checking-account-btn {
+    background-color: #4196d7;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+#create-savings-account-btn {
+    background-color: #4196d7;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+.submit-btn {
+    background-color: #4196d7;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+.submit-btn-2 {
+    background-color: #4196d7;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid black;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
+}
+input[type="text"], input[type="number"], select {
+    border: 1px solid rgb(198, 197, 197);
+    padding: 10px;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: rgb(198, 197, 197);
+}
+footer {
+    background-color: #4196d7; 
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 14px; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #000000; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: #ffffff; 
+}
+
+footer p {
+    margin: 0; 
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 10px 0; 
+    }
+    
+    footer a {
+        font-size: 12px; 
+    }
+}
